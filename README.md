@@ -68,15 +68,6 @@ purepulse-website/
 
 ---
 
-### Bildübersicht
-
-| Dateiname | Verwendet auf | Format | Empfohlene Größe |
-|---|---|---|---|
-| `flasche.png` | `index.html`, `produkt.html` | PNG (transparent) | min. 600 × 900 px |
-| `persona-jonas.jpg` | `zielgruppe.html` | JPG | min. 600 × 800 px |
-
----
-
 ## 🎨 Design & Farben
 
 Das Design folgt dem Farbschema der PowerPoint-Präsentation.  
