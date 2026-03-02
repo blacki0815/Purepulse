@@ -105,58 +105,6 @@ Die Website verwendet zwei Google Fonts, die automatisch geladen werden:
 
 ---
 
-## ⚙️ Anpassungen
-
-### Texte ändern
-Alle Inhalte stehen direkt im jeweiligen HTML. Einfach den gewünschten Text austauschen – keine Build-Prozesse notwendig.
-
-### Farben anpassen
-Zentral in `style.css` unter `:root { ... }` — eine Änderung wirkt sich auf die gesamte Website aus.
-
-### Neue Seite hinzufügen
-1. Eine bestehende HTML-Datei als Vorlage kopieren
-2. Oben die Navigation anpassen (`class="active"` an den richtigen Link)
-3. Link in der Navigation aller anderen Seiten ergänzen
-
-### Navigation erweitern
-In **allen** HTML-Dateien die `<nav>`-Sektion und `<div class="mobile-menu">` anpassen:
-
-```html
-<ul class="nav__links">
-  <!-- Neuen Eintrag hier hinzufügen -->
-  <li><a href="neue-seite.html">Neue Seite</a></li>
-</ul>
-```
-
----
-
-## 🌐 Browser-Kompatibilität
-
-| Browser | Unterstützung |
-|---|---|
-| Chrome 90+ | ✅ Vollständig |
-| Firefox 88+ | ✅ Vollständig |
-| Safari 14+ | ✅ Vollständig |
-| Edge 90+ | ✅ Vollständig |
-| IE 11 | ❌ Nicht unterstützt |
-
-> Das Design nutzt `CSS Grid`, `CSS Custom Properties`, `backdrop-filter` und `IntersectionObserver` — alle modernen Browser werden unterstützt.
-
----
-
-## 📦 Abhängigkeiten
-
-Keine npm-Pakete, kein Build-Tool, kein Framework.
-
-| Ressource | Typ | Quelle |
-|---|---|---|
-| Playfair Display | Font | Google Fonts (CDN) |
-| DM Sans | Font | Google Fonts (CDN) |
-
-Alles andere ist reines HTML, CSS und Vanilla JavaScript.
-
----
-
 ## 📝 Lizenz
 
 Dieses Projekt ist ein nicht-öffentliches Konzeptprojekt.  
