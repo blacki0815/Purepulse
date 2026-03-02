@@ -17,7 +17,6 @@
 - [Dateistruktur](#-dateistruktur)
 - [Design & Farben](#-design--farben)
 - [Fonts](#-fonts)
-- [Anpassungen](#-anpassungen)
 - [Browser-Kompatibilität](#-browser-kompatibilität)
 
 ---
