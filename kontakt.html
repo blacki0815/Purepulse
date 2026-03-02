@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt – PUREPULSE Natur Pur</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav__logo">PURE<span>PULSE</span></div>
+    <ul class="nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="produkt.html">Produkt</a></li>
+      <li><a href="zielgruppe.html">Zielgruppe</a></li>
+      <li><a href="marketing.html">Marketing</a></li>
+      <li><a href="kontakt.html" class="active">Kontakt</a></li>
+    </ul>
+    <a href="kontakt.html" class="nav__cta">Entdecken</a>
+    <button class="nav__burger" id="burger" aria-label="Menü"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="produkt.html">Produkt</a></li>
+      <li><a href="zielgruppe.html">Zielgruppe</a></li>
+      <li><a href="marketing.html">Marketing</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </div>
+
+  <section class="page-hero">
+    <div class="page-hero__leaves">
+      <div class="leaf leaf--1">🌿</div>
+      <div class="leaf leaf--2">🍃</div>
+      <div class="leaf leaf--3">🍋</div>
+    </div>
+    <div class="container">
+      <span class="section-tag">Kontakt</span>
+      <h1>Sprechen wir<br /><em>miteinander.</em></h1>
+      <p>Partneranfragen · Handel · Presse · Allgemeines</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact section">
+    <div class="container">
+      <div class="contact__grid">
+        <div class="contact__info reveal">
+          <h2>Wir freuen uns<br /><em>von Ihnen zu hören.</em></h2>
+          <p>Ob Handelspartner, Presseanfrage, Kooperationsidee oder einfach eine Frage zum Produkt – wir antworten innerhalb von 48 Stunden.</p>
+
+          <div class="contact-item">
+            <div class="contact-item__icon">✉️</div>
+            <div>
+              <strong>E-Mail</strong>
+              <span>hello@purepulse-naturpur.de</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon">🌐</div>
+            <div>
+              <strong>Website</strong>
+              <span>purepulse-naturpur.de</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon">📱</div>
+            <div>
+              <strong>Social Media</strong>
+              <span>@purepulse.naturpur</span>
+            </div>
+          </div>
+
+          <div class="contact-eco-box">
+            <div class="contact-eco-row">♻️ 100% recyceltes PET</div>
+            <div class="contact-eco-row">🌱 Klimaneutrale Produktion</div>
+            <div class="contact-eco-row">🔍 CO₂-Transparenz per QR-Code</div>
+          </div>
+        </div>
+
+        <div class="contact__form reveal" style="--delay:0.2s">
+          <h3>Nachricht senden</h3>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Ihr Name" />
+          </div>
+          <div class="form-group">
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" placeholder="ihre@email.de" />
+          </div>
+          <div class="form-group">
+            <label for="subject">Betreff</label>
+            <select id="subject">
+              <option value="">Bitte wählen...</option>
+              <option>Handelspartnerschaft</option>
+              <option>Presseanfrage</option>
+              <option>Influencer / Kooperation</option>
+              <option>Produktfrage</option>
+              <option>Sonstiges</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Nachricht</label>
+            <textarea id="message" rows="5" placeholder="Ihre Nachricht..."></textarea>
+          </div>
+          <button class="btn btn--primary btn--full" id="sendBtn" onclick="handleSubmit()">Nachricht senden →</button>
+          <div class="form-success" id="formSuccess">
+            🌿 Vielen Dank! Wir melden uns innerhalb von 48 Stunden.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSING QUOTE -->
+  <section class="closing-quote">
+    <div class="container reveal">
+      <blockquote>
+        <em>"PUREPULSE ist die natürliche Antwort auf einen Markt im Wandel –<br/>für Menschen, die Leistung und Gesundheit nicht voneinander trennen wollen."</em>
+        <cite>– PUREPULSE GmbH, 2025</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <div class="footer__logo">PURE<span>PULSE</span></div>
+        <p>Natur Pur · Citrus Mint<br/>Wach ohne Crash.</p>
+        <div class="footer__eco">
+          <span>♻️ 100% rPET</span>
+          <span>🌱 Klimaneutral</span>
+          <span>🔍 CO₂-Transparent</span>
+        </div>
+      </div>
+      <div class="footer__nav">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="produkt.html">Produkt</a></li>
+          <li><a href="zielgruppe.html">Zielgruppe</a></li>
+          <li><a href="marketing.html">Marketing</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h4>Kontakt</h4>
+        <p>hello@purepulse-naturpur.de</p>
+        <p>purepulse-naturpur.de</p>
+        <div class="footer__social">
+          <a href="#">Instagram</a>
+          <a href="#">TikTok</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 PUREPULSE GmbH · Alle Rechte vorbehalten · <a href="#">Impressum</a> · <a href="#">Datenschutz</a></p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    function handleSubmit() {
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      if (!name || !email || !message) {
+        alert('Bitte füllen Sie alle Pflichtfelder aus.');
+        return;
+      }
+      document.getElementById('sendBtn').style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
